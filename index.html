@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <img class="header-img" src="./img/logo.svg" alt="logo">
         <p class="header-title">BuhOne</p>
         <ul>
@@ -46,12 +46,15 @@
     </header>
     <main>
         <section class="desc">
+            <div class="container">
             <h1 class="desc-title">Бухгалтерские услуги в Санкт-Петербурге</h1>
             <a class="desc-link" href="#">Наша презентация</a>
+            </div>
         </section>
         <section class="service">
+            <div class="container">
             <h2 class="section-title">Наши услуги</h2>
-            <p class="section-sub-title">Мы специализируемся</p>
+            <p class="section-sub-title servise-sub-tatile">Мы специализируемся</p>
             <ul class="service-list">
                 <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
                 <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
@@ -60,8 +63,9 @@
                 <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
                 <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
             </ul>
+            </div>
         </section>
-        <section>
+        <section class="container">
             <h2 class="section-title">О нас</h2>
             <p class="section-sub-title">Компания <span class="section-sub-title-color">ИвановПром</span></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -106,30 +110,30 @@
                 <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
             </ul>
         </section>
-        <section class="review">
-            <h2 class="section-title">О нас</h2>
+        <section class="review container">
+            <h2 class="section-title">Отзывы</h2>
             <p class="section-sub-title">Ваши благодарности</p>
             <button class="review-button" type="button" disabled>Оставить отзыв</button>
             <ul class="review-block-bgr">
-                <li>
+                <li class="review-item">
                     <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
                     <p class="review-item-author">Екатерина Иванова</p>
                     <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
-                <li>
+                <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
                     <p class="review-item-author">Екатерина Иванова</p>
                     <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
-                <li>
+                <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
                     <p class="review-item-author">Екатерина Иванова</p>
                     <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
-                <li>
+                <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
                     <p class="review-item-author">Екатерина Иванова</p>
@@ -137,13 +141,13 @@
                 </li>
             </ul>
             <ul>
-                <li><button type="button">1</button></li>
-                <li><button type="button">2</button></li>
-                <li><button type="button">3</button></li>
-                <li><button type="button">4</button></li>
+                <li><button type="button" class="review-slider-button"></button></li>
+                <li><button type="button" class="review-slider-button"></button></li>
+                <li><button type="button" class="review-slider-button review-slider-button-active"></button></li>
+                <li><button type="button" class="review-slider-button"></button></li>
             </ul>
-            <button type="button" disabled><img src="./img/errow_left.png" alt=""></button>
-            <button type="button" ><img src="./img/errow_right.png" alt=""></button>
+            <button class="review-slider-arrow" type="button" disabled><img src="./img/errow_left.png" alt=""></button>
+            <button class="review-slider-arrow review-slider-arrow-active" type="button" ><img src="./img/errow_right.png" alt=""></button>
             </section>
             <section class="advantage">
                 <h2 class="section-title">Наши преимущетсва</h2>
