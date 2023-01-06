@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SITE</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="logo">
-        <p>New Site</p>
+    <header class="header">
+        <img class="header-img" src="./img/logo.svg" alt="logo">
+        <p class="header-title">BuhOne</p>
         <ul>
             <li>
-                <a href="tel:97885995665">
+                <a class="header-contact-link" href="tel:97885995665">
                     <img src="./img/phone.svg" alt="phone">
-                    <span>9 788 599-56-65</span>
+                    <span class="header-contact-text">9 788 599-56-65</span>
                 </a>
             </li>
             <li>
                 <img src="./img/envelop_blue.svg" alt="envelop">
-                <span>fff@fff.com</span>
+                <span class="header-contact-text">fff@fff.com</span>
             </li>
             <li>
                 <img src="./img/time.svg" alt="time">
@@ -27,91 +31,109 @@
             </li>
             <li>
                 <img src="./img/address.svg" alt="address">
-                <span>Street</span>
+                <span class="header-contact-text">Street</span>
             </li>
         </ul>
         <nav>
             <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">услуги</a></li>
-                <li><a href="">кейсы</a></li>
-                <li><a href="">о компании</a></li>
-                <li><a href="">контакты</a></li>
+                <li><a class="header-nav-link" href="">главная</a></li>
+                <li><a class="header-nav-link" href="">услуги</a></li>
+                <li><a class="header-nav-link" href="">кейсы</a></li>
+                <li><a class="header-nav-link" href="">о компании</a></li>
+                <li><a class="header-nav-link" href="">контакты</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>First sate</h1>
-            <a href="#">Presintashin</a>
+        <section class="desc">
+            <h1 class="desc-title">Бухгалтерские услуги в Санкт-Петербурге</h1>
+            <a class="desc-link" href="#">Наша презентация</a>
         </section>
-        <section>
-            <h2>OUR SERVICES</h2>
-            <p>We us your</p>
-            <ul>
-                <li><a href=""><h3>TEXT1</h3></a></li>
-                <li><a href=""><h3>TEXT2</h3></a></li>
-                <li><a href=""><h3>TEXT3</h3></a></li>
-                <li><a href=""><h3>TEXT4</h3></a></li>
-                <li><a href=""><h3>TEXT5</h3></a></li>
-                <li><a href=""><h3>TEXT6</h3></a></li>
+        <section class="service">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-sub-title">Мы специализируемся</p>
+            <ul class="service-list">
+                <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-title-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
             </ul>
         </section>
         <section>
-            <h2>About us</h2>
-            <p>Company by PavelGik</p>
+            <h2 class="section-title">О нас</h2>
+            <p class="section-sub-title">Компания <span class="section-sub-title-color">ИвановПром</span></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Eos corporis ex odit quae provident repudiandae doloribus perspiciatis 
                 tempora expedita aut similique veritatis commodi error voluptatum nesciunt nulla dolorem, 
                 dolores numquam!
             </p>
             <ul>
-                <li><a href="#"></a>123</li>
-                <li><a href="#"></a>234</li>
-                <li><a href="#"></a>345</li>
-                <li><a href="#"></a>456</li>
+                <li class="about-bgr">
+                    <p class="about-number">90</p>
+                    <h3 class="about-title">Завершено крупных сделок</h3>
+                    <a class="about-link" href="#">Все кейсы</a>
+                </li>
+                <li class="about-bgr">
+                    <p class="about-number">90</p>
+                    <h3 class="about-title">Завершено крупных сделок</h3>
+                    <a class="about-link" href="#">Все кейсы</a>
+                </li>
+                <li class="about-bgr">
+                    <p class="about-number">90</p>
+                    <h3 class="about-title">Завершено крупных сделок</h3>
+                    <a class="about-link" href="#">Все кейсы</a>
+                </li>
+                <li class="about-bgr-fourth">
+                    <p class="about-number-fourth">90</p>
+                    <h3 class="about-title-fourth">Завершено крупных сделок</h3>
+                    <a class="about-link-fourth" href="#">Все кейсы</a>
+                </li>
             </ul>
         </section>
-        <section>
-            <h2>Customers</h2>
-            <p>Works with us</p>
+        <section class="customer-bgr">
+            <h2 class="section-title">Наши клиенты</h2>
+            <p class="section-sub-title">С нами работают</p>
             <ul>
-                <li><img src="./img/works_with_us.png" alt="address"></li>
-                <li><img src="./img/works_with_us.png" alt="address"></li>
-                <li><img src="./img/works_with_us.png" alt="address"></li>
-                <li><img src="./img/works_with_us.png" alt="address"></li>
-                <li><img src="./img/works_with_us.png" alt="address"></li>
-                <li><img src="./img/works_with_us.png" alt="address"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
+                <li><a href="#"></a><img src="./img/works_with_us.png" alt="client"></li>
             </ul>
         </section>
-        <section>
-            <h2>Reviews</h2>
-            <p>Ваши благодарности</p>
-            <button type="button" disabled>Оставить отзыв</button>
-            <ul>
+        <section class="review">
+            <h2 class="section-title">О нас</h2>
+            <p class="section-sub-title">Ваши благодарности</p>
+            <button class="review-button" type="button" disabled>Оставить отзыв</button>
+            <ul class="review-block-bgr">
                 <li>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
+                    <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО “Раз-два”</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
                 <li>
-                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, mollitia. Iste dolore voluptate consequatur natus cumque. Vitae, mollitia dolorem maiores maxime nihil sunt debitis doloribus dolore accusamus, est repellat delectus?</blockquote>
+                    <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО “Раз-два”</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
                 <li>
-                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, mollitia. Iste dolore voluptate consequatur natus cumque. Vitae, mollitia dolorem maiores maxime nihil sunt debitis doloribus dolore accusamus, est repellat delectus?</blockquote>
+                    <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО “Раз-два”</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
                 <li>
-                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, mollitia. Iste dolore voluptate consequatur natus cumque. Vitae, mollitia dolorem maiores maxime nihil sunt debitis doloribus dolore accusamus, est repellat delectus?</blockquote>
+                    <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
                     <img src="./img/women.png" alt="women">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО “Раз-два”</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО “Раз-два”</p>
                 </li>
             </ul>
             <ul>
@@ -121,35 +143,36 @@
                 <li><button type="button">4</button></li>
             </ul>
             <button type="button" disabled><img src="./img/errow_left.png" alt=""></button>
-            <button type="button" disabled><img src="./img/errow_right.png" alt=""></button>
+            <button type="button" ><img src="./img/errow_right.png" alt=""></button>
             </section>
-            <section>
-                <h2>Наши преимущетсва</h2>
-                <p>Мы предлагаем</p>
+            <section class="advantage">
+                <h2 class="section-title">Наши преимущетсва</h2>
+                <p class="section-sub-title">Мы предлагаем</p>
                 <ul>
                     <li>
-                        <img src="./img/quality.svg" alt="quality">
-                        <p>Качество</p>
+                        <img class="advantage-img" src="./img/quality.svg" alt="quality">
+                        <p class="advantage-title">Качество</p>
                     </li>
                     <li>
-                        <img src="./img/efficiency.svg" alt="efficiency">
-                        <p>Оперативность</p>
+                        <img class="advantage-img" src="./img/efficiency.svg" alt="efficiency">
+                        <p class="advantage-title">Оперативность</p>
                     </li>
                     <li>
-                        <img src="./img/expert.svg" alt="expert">
-                        <p>Экспертность</p>
+                        <img class="advantage-img" src="./img/expert.svg" alt="expert">
+                        <p class="advantage-title">Экспертность</p>
                     </li>
                 </ul>
             </section>
     </main>
     <footer>
-        <div>
-            <h2>Связь с нами</h2>
+        <div class="connection">
+            <h2 class="connection-title">Связь с нами</h2>
             <p>У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+            <button class="review-button" type="button" disabled>Отправить сообщение</button>
             <ul>
                 <li>
-                    <a href="tel:97885995665">
-                        <img src="./img/phone.svg" alt="phone">
+                    <a class="footer-contact-link" href="tel:97885995665">
+                        <img src="./img/phone_footer.svg" alt="phone">
                         <span>9 788 599-56-65</span>
                     </a>
                 </li>
