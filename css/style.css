@@ -136,7 +136,6 @@ body {
 }
 
 .service-title-link {
-    background-image: url(../img/services_bgr.jpg);
     text-decoration: none;
     font-weight: 900;
     font-size: 24px;
@@ -144,7 +143,16 @@ body {
 }
 
 .service-item-title {
+    background-color: #333;
+    background-image: url(../img/services_bgr.jpg);
+    background-repeat: no-repeat;
+    line-height: 30px;
+    width: 350px;
+    height: 360px;
+    display: block;
+    padding: 45px;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .review-block-bgr {
