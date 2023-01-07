@@ -12,6 +12,14 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;    
+}
+
+.half-width {
+    width: 50%;
+} 
+
 .header {
     padding: 23px 0 31px ;
 }
@@ -61,7 +69,9 @@ body {
     line-height: 34px;
     min-height: 84px;
     width: 333px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .desc-title {
@@ -92,6 +102,11 @@ body {
     font-weight: 900;
     font-size: 48px;
     line-height: 69px;
+    margin: 107px 0;
+}
+
+.customer-sub-title {
+    margin: 0 0 43px;
 }
 
 .servise-sub-tatile {
@@ -102,11 +117,24 @@ body {
     color: #005FA3;
 }
 
+.about {
+    padding: 140px 0;
+}
+
+.about-text {
+    width: 445px;
+}
+
+.about-sub-title {
+    margin: 0 0 60px;
+}
+
 .about-number {
     font-weight: 900;
     font-size: 55px;
     line-height: 66px;
     letter-spacing: 0.1em;
+    margin: 30px;
 }
 
 .about-title {
@@ -119,14 +147,30 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+    display: block;
+    margin: 47px 0 0;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-bgr {
     background-color: #ebebeb;
+    width: 255px;
+    min-height: 255px;
+    padding: 30px 40px 40px;
+    box-sizing: border-box;
 }
 
 .about-bgr-fourth {
     background-color: #005FA3;
+    width: 255px;
+    min-height: 255px;
+    padding: 30px 40px 40px;
+    box-sizing: border-box;
 }
 
 .about-number-fourth {
@@ -149,10 +193,16 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+    display: block;
+    margin: 47px 0 0;
 }
 
 .customer-bgr {
     background-color: #ebebeb;
+}
+
+.customer-item {
+    padding: 85px 0 92px;
 }
 
 .service-title-link {
@@ -242,6 +292,7 @@ body {
 
 .advantage {
     background-color: #ebebeb;
+    padding: 102px 0 112px;
 }
 
 .advantage-img {
@@ -259,21 +310,38 @@ body {
     display: none;
 }
 
-.connection {
+.footer {
     background-color: #333;
     background-image: url(../img/first_screen_bgr.jpg);
     color: #fff;
     text-decoration: none;
 }
 
-.connection-title {
+.footer-wrp {
+    padding: 122px 0 140px;
+}
+
+.footer-title {
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 48px;
     line-height: 69px;
 }
 
+.footer-text {
+    padding: 60px 0;
+    display: block;
+}
+
+.footer-contact {
+    padding: 80px 0;
+}
+
 .footer-contact-link {
     color: #fff;
     text-decoration: none;
+}
+
+.footer-about {
+    padding: 50px 0 0;
 }
