@@ -30,17 +30,32 @@ body {
 
 .header {
     padding: 23px 0 31px ;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid green; */
 }
 
 .header-logo {
     display: flex;
-    justify-content: left;
+    align-items: center;
+    padding: 0 100px 0 0;
+    /* border: 1px solid red; */
+}
+
+.header-contact {
+    display: flex;
+    width: auto;
+    flex-direction: column;    
+    /* border: 1px solid black; */
 }
 
 .header-contact-container {
     display: flex;
     margin: 0 0 18px;
-    justify-content: space-between;
+    width: 800px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid blue; */
 }
 
 .header-title {
@@ -58,8 +73,27 @@ body {
     line-height: 17px;
 }
 
+.header-contact-item {
+    display: flex;
+    align-items: center;
+}
+
 .header-contact-link {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-contact-link:hover .header-contact-text, 
+.header-contact-link:focus .header-contact-text {
+    /* opacity: 0.7; */
+    color: #005FA3;
+}
+
+.header-contact-link:hover .blue-icon, 
+.header-contact-link:hover .blue-icon {
+    /* opacity: 0.7; */
+    fill: #ee6565;
 }
 
 .header-nav-link {
@@ -70,6 +104,15 @@ body {
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.1em;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: #005FA3;
+}
+
+.header-nav-link:active {
+    opacity: 0.7;
 }
 
 .desc {
@@ -91,6 +134,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.desc-link:hover,
+.desc-link:focus {
+    background-color: #0591f5;
 }
 
 .desc-title {
@@ -130,8 +178,12 @@ body {
     flex-wrap: wrap;
 }
 
-.service-item:nth-of-type(n+4) {
-    margin: 30px 0 0;
+.cliet-item-link {
+    display: block;
+}
+
+.cliet-item-link:hover {
+    outline: 2px solid #005FA3;
 }
 
 .customer-sub-title {
@@ -230,6 +282,21 @@ body {
     padding: 85px 0 92px;
 }
 
+.service-item {
+    background-color: #333;
+    background-image: url(../img/services_bgr.jpg);
+    width: 350px;
+    min-height: 360px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.service-item:nth-of-type(n+4) {
+    margin: 30px 0 0;
+}
+
 .service-title-link {
     text-decoration: none;
     font-weight: 900;
@@ -237,18 +304,27 @@ body {
     line-height: 30px;
 }
 
+.service-item::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #005FA3;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.service-item:hover.service-item::before,
+.service-item:focus.service-item::before {
+    display: block;
+}
+
 .service-item-title {
-    background-color: #333;
-    background-image: url(../img/services_bgr.jpg);
-    background-repeat: no-repeat;
     line-height: 30px;
-    width: 350px;
-    min-height: 360px;
-    display: flex;
-    align-items: flex-end;
     padding: 45px;
     color: #fff;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .review {
@@ -282,10 +358,6 @@ body {
     opacity: 0.4;
 }
 
-.review-slider-button-active {
-    opacity: 1;
-}
-
 .review-slider-arrow {
     width: 60px;
     height: 60px;
@@ -297,6 +369,15 @@ body {
 
 .review-slider-arrow-active {
     opacity: 1;
+}
+
+.review-slider-arrow-active:hover,
+.review-slider-arrow-active:focus {
+    background-color: #0591f5;
+}
+
+.review-slider-arrow-active:active {
+    opacity: 0.7;
 }
 
 .review-item {
@@ -450,11 +531,50 @@ textarea::placeholder {
 }
 
 .popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-close {
+    display: none;
+}
+
+.popup-wrp {
     background-color: #262626;
     width: 733px;
     min-height: 636px;
     padding: 55px 95px 69px;
-    box-sizing: border-box  ;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.popup-cross {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    top: 19px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.popup-cross:hover,
+.popup-cross:focus {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.popup-cross-icon {
+    width: 30px;
+    height: 28px;
 }
 
 .popup-title {
