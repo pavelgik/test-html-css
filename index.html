@@ -164,7 +164,7 @@
         <section class="review container">
             <h2 class="section-title">Отзывы</h2>
             <p class="section-sub-title">Ваши благодарности</p>
-            <button class="review-button review-slider-arrow-active" type="button" disabled>Оставить отзыв</button>
+            <button class="review-button review-slider-arrow-active" type="button" id="letReviewBtn">Оставить отзыв</button>
             <ul class="review-block-bgr">
                 <li class="review-item">
                     <p class="review-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti laudantium quod, fugiat beatae laboriosam vitae porro eveniet laborum quas quasi ipsum voluptas incidunt. Laborum quis corrupti sapiente dolores. Totam?</p>
@@ -248,11 +248,11 @@
                             <div class="form-row-wrp">
                                 <label>
                                     <span class="input-lable">Имя</span>
-                                    <input type="text" placeholder="Иван">
+                                    <input type="text" placeholder="Иван" required>
                                 </label>
                                 <label>
                                     <span class="input-lable">Телефон</span>
-                                    <input type="tel" placeholder="+7 978-888-888-88">
+                                    <input type="tel" placeholder="+7 978-888-888-88" required>
                                 </label>
                             </div>
                             <label>
@@ -270,9 +270,9 @@
             <p>Разработано: BuhOne</p>
         </div>
     </footer>
-    <div class="popup popup-close">
+    <div class="popup popup-close" id="popupWrp">
         <div class="popup-wrp">
-            <button type="button" class="popup-cross">
+            <button type="button" class="popup-cross" id="popupCloseBtn">
                 <svg class="popup-cross-icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.664338 28L15 14.619L29.3357 28L30 27.3814L15.6633 13.9998L30 0.617771L29.3357 0L15 13.3806L0.664338 0L0 0.617771L14.3367 13.9998L0 27.3814L0.664338 28Z" fill="white"/>
                 </svg>
@@ -282,11 +282,11 @@
                 <div class="form-row-wrp">
                     <label>
                         <span class="input-lable">Имя</span>
-                        <input type="text" placeholder="Иван">
+                        <input type="text" placeholder="Иван" required>
                     </label>
                     <label>
                         <span class="input-lable">Фамилия</span>
-                        <input type="text" placeholder="Иванов">
+                        <input type="text" placeholder="Иванов" required>
                     </label>
                 </div>
                 <div class="form-row-wrp">
@@ -295,11 +295,13 @@
                         <input type="email" placeholder="Email">
                     </label>
                     <fieldset>
-                        <legend>Все понравилось</legend>
-                        <input type="radio" id="lake-yes" name="like" value="yes">
-                        <label for="lake-yes">да</label>
-                        <input type="radio" id="lake-no" name="like" value="no">
-                        <label for="lake-yes">нет</label>
+                        <legend class="from-like-legend">Все понравилось</legend>
+                        <div class="flex from-like-input-wrp">
+                            <input type="radio" id="lake-yes" name="like" value="yes">
+                            <label class="radio-lable" for="lake-yes">да</label>
+                            <input type="radio" id="lake-no" name="like" value="no">
+                            <label class="radio-lable" for="lake-yes">нет</label>
+                        </div>
                         <label>
                             <span class="review-lable">Отзыв</span>
                             <textarea placeholder="Отзыв"></textarea>
@@ -310,5 +312,6 @@
             </form>
         </div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

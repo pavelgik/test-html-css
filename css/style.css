@@ -11,6 +11,41 @@ body {
     fill: #005FA3;
 }
 
+[type="radio"] {
+    display: none;
+}
+
+.radio-lable {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+}
+
+.radio-lable::before {
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 11px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: -17px;
+    bottom: -1px;
+}
+
+[type="radio"]:checked+.radio-lable::before {
+    background-color: #ee6565;
+}
+
+.from-like-input-wrp {
+    margin: 0 0 0 17px;
+}
+
+.radio-lable:nth-of-type(n+2) {
+    margin: 0 0 0 55px;
+}
+
 .container {
     width: 1115px;
     margin: 0 auto;
@@ -479,7 +514,8 @@ body {
     flex-wrap: wrap;
 }
 
-.input-lable {
+.input-lable,
+.from-like-legend {
     display: block;
     font-size: 16px;
     font-weight: 400;
